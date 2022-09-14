@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%; /* 1 rem = 10 px */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+}
+
+.card-image {
+    min-height: 30rem;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-content {
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+p:nth-child(1){
+   margin: 0;
+}
+
+.card-heading,
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+}
+
+.card-heading {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.card-main {
+    font-size: 3rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.card-priece {
+    font-size: 3rem;
+    color: var(--dark-cyan);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-priece span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    display:inline-block;
+    margin-left: 15px;
+    text-decoration:line-through;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    
+}
+
+.btn::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(/images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .card-grid {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-content {
+    grid-column: 2 / 3;
+} */
